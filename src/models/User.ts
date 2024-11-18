@@ -1,8 +1,8 @@
 import { Schema, model, Document, ObjectId } from 'mongoose';
 
 interface IUser extends Document {
-  userName?: string,
-  email?: string,
+  userName: string,
+  email: string,
   thoughts: ObjectId[],
   friends: ObjectId[],
 }

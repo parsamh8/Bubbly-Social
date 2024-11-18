@@ -40,7 +40,7 @@ import { Request, Response } from 'express';
     }
   }
 
-  // Delete a user and associated apps
+  // Bonus: Delete a user and associated apps
   export const deleteUser = async (req: Request, res: Response) => {
     try {
       const user = await User.findOneAndDelete({ _id: req.params.userId });
@@ -50,7 +50,7 @@ import { Request, Response } from 'express';
       }
 
       await Thought.deleteMany({ _id: { $in: user.thoughts } });
-      res.json({ message: 'User and associated apps deleted!' })
+      res.json({ message: 'User and associated thoughts deleted!' })
       return;
       
     } catch (err) {

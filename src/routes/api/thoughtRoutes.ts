@@ -2,20 +2,20 @@ import { Router } from 'express';
 const router = Router();
 import { getThought, getSingleThought, createThought, updateThought, deleteThought, addReaction, removeReaction } from '../../controllers/thoughtController.js';
 
-// /api/videos
+// /api/thoughts
 router.route('/').get(getThought).post(createThought);
 
-// /api/videos/:videoId
+// /api/thoughts/:thoughtId
 router
   .route('/:thoughtId')
   .get(getSingleThought)
   .put(updateThought)
   .delete(deleteThought);
 
-// /api/videos/:videoId/responses
+// /api/thoughts/:thoughtId/reactions
 router.route('/:thoughtId/reactions').post(addReaction);
 
-// /api/videos/:videoId/responses/:responseId
+// /api/thoughts/:thoughtId/reactions/:reactionId
 router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
 
 export default router;

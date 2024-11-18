@@ -101,7 +101,7 @@ import { Request, Response } from 'express';
 
       if (!user) {
         return res.status(404).json({
-          message: 'Thought created but no user with this id!',
+          message: 'Thought deleted but no user with this id found!',
         });
       }
 

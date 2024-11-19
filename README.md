@@ -13,7 +13,7 @@ The **Testing Route Application** is a backend solution designed to streamline t
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Local Installation / Testing](#local-installation--testing)
-  - [Features](#features)
+  - [Usage](#usage)
   - [Tests](#tests)
   - [License](#license)
   - [Contributing](#contributing)
@@ -47,7 +47,10 @@ npm run seed
 [http://localhost:3001/](http://localhost:3001/)
 
 
-## Features
+## Usage
+
+Heres a [Link](https://drive.google.com/file/d/1xi2nPvWCBrTdXrDoWHzAJo5vqzafGetr/view) to step by step demonstration.
+
 
 1. **Server Initialization and Database Syncing:**
    - Launch the application with a single command to start the server.
